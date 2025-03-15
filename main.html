@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function validateForm() {
+            let country = document.getElementById("country").value;
+            if (country !== "India") {
+                alert("Only users from India are allowed!");
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission
+        }
+    </script>
+</head>
+<body>
+    
+
+</html>
+<header>
+    
+    <h1>Hi, welcome back</h1>
+    <p>First time here? <span class="text-white">Sign up</span></p>
+</header>
+<form action="login.html">
+
+    <input type="email" 
+    name="email" 
+    placeholder="Your e-mail id">
+    
+
+    <input 
+    type="password" 
+    name="password" 
+    placeholder="Password">
+    
+    <p> Password must be at least 6 characters</p>
+
+
+    <button type="submit">Sign In</button>
+    
+
+    <p class="text-white">Sign in using  link</p>
+    <div class="or">or</div>
+    <button class="sso" type="button">login with phone number</button>
+
+    
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="India">India</option>
+    </select>
+    <button type="submit">Submit</button>
+    <P>
+        you acknowledge that you have read and understood the terms and conditions
+        <a>Term of Service
+
+        </a> and our <a>Privacy Policy</a>
+    </P>
+
+
+
+
+</form>
+
+</body>
+</html>
